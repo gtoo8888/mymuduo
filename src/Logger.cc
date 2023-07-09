@@ -2,6 +2,7 @@
 
 #include "Logger.h"
 #include "noncopyable.h"
+#include "Timestamp.h"
 
 // 获取日志唯一的实例对象
 Logger& Logger::instance(){
@@ -18,7 +19,7 @@ void Logger::setLogLevel(int level){
 void Logger::log(std::string msg){
     switch(logLevel_){
         case INFO:
-            std::cout << "[INFO]";
+            std::cout << "[ INFO]";
             break;
         case ERROR:
             std::cout << "[ERROR]";
@@ -33,7 +34,7 @@ void Logger::log(std::string msg){
             break;
     }
     // 打印时间和msg
-    std::cout << "print time" << ":" << msg << std::endl;
+    std::cout << Timestamp::now().toString() << " " << msg << std::endl;
 }
 
 

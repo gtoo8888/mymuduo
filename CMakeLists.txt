@@ -11,6 +11,6 @@ aux_source_directory(src SRC_LIST)
 
 
 # 编译生成动态库nymuduo
-# add_library(mymuduo SHARED ${SRC_LIST})
+add_library(mymuduo SHARED ${SRC_LIST})
 
 add_executable(mymuduo ${SRC_LIST})
