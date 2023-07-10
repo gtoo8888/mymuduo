@@ -1,5 +1,5 @@
 # mymuduo
 
-./autobuild.sh
-./run.sh
-make clean
+./autobuild.sh <br/>
+./run.sh <br/>
+make clean <br/>
